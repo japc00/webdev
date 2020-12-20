@@ -51,7 +51,7 @@ body
 .logo-container
 {
     position: absolute;
-    scale: 50%;
+    transform: translate(50%);
     left: 50%;
     margin-left: -600px;
     top: 13%;
