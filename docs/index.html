@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Pending....</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<body>
+    
+
+    <div class="container">
+        <div id="particles-js"></div>
+            <div class="txtlogo">
+               <a href="index.html"> japco-dev</a>
+            </div>
+            <div class="buttons">
+                <div class="button"> <a href="about.html">   About    </a>        </div>
+                <div class="button"> <a href="skills.html">  Skills  </a>           </div>
+                <div class="button"> <a href="contact.html">  Contact    </a>        </div>
+            </div>
+
+    </div>
+</body>
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="particles.js"></script>
+<script src="index.js"></script>
+<script src="script.js"></script>
+
+
+
+
+<script>
+    gsap.from(".txtlogo", {
+        opacity: 0,
+        y: -40,
+        duration: 1,
+        ease: "power1",
+        delay: 0.3,
+        
+    })
+    gsap.from(".buttons", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power1",
+        delay: 0.5,
+        
+    })
+
+    gsap.from("#particles-js", {
+        opacity: 0,
+        duration: 0.8,
+    })
+
+</script>
+</html>
